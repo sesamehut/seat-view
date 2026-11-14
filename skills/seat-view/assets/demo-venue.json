@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "name": "月湾 · 虚构示范场馆",
+  "kind": "generic",
+  "units": "m",
+  "bowl": {
+    "radius_x": 58,
+    "radius_y": 86,
+    "tiers": [
+      {"rows": 22, "row_depth": 0.8, "row_rise": 0.38, "base_height": 1.2, "gap_before": 0},
+      {"rows": 20, "row_depth": 0.85, "row_rise": 0.52, "base_height": 14, "gap_before": 4}
+    ]
+  },
+  "stage": {"layout": "thrust", "width": 36, "depth": 15, "height": 1.8},
+  "views": [
+    {"id": "front", "label": "正面 · 低层", "tier": 1, "row": 8, "azimuth_deg": 0},
+    {"id": "side", "label": "侧面 · 低层", "tier": 1, "row": 12, "azimuth_deg": 95},
+    {"id": "upper", "label": "正面 · 高层", "tier": 2, "row": 12, "azimuth_deg": 25}
+  ],
+  "evidence": [
+    {"field": "bowl", "status": "estimated", "source_url": "", "note": "全部为原创演示参数；不对应任何真实场馆。"},
+    {"field": "stage", "status": "estimated", "source_url": "", "note": "通用延伸台示意，不对应实际巡演舞美。"},
+    {"field": "views", "status": "estimated", "source_url": "", "note": "位置表示模型层、排及方位，没有官方区排座映射。"}
+  ],
+  "sources": [],
+  "assumptions": [
+    "月湾是虚构示范场馆。所有尺寸均为演示假设，不是测绘结果。",
+    "人物高 1.75 米，坐姿眼高 1.2 米，相机垂直视场角 50 度；这些是统一的演示参数。",
+    "未建模屋顶、栏杆、临时音塔与前排观众，不能据此判断真实遮挡。",
+    "模型排位与官方票面区排座无对应关系。"
+  ]
+}

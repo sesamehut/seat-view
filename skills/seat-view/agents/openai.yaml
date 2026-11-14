@@ -1,0 +1,4 @@
+interface:
+  display_name: "Seat View · 坐哪儿"
+  short_description: "研究场馆资料，生成可交互的演唱会选座视角预演，并保留每个重要假设。"
+  default_prompt: "使用 $seat-view 为我想看的演唱会生成三个候选位置的 3D 视角预演，先确认场馆，并说明舞台和尺寸假设。"

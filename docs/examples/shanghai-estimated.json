@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "name": "上海体育场 · 假想端台观演示意（估算）",
+  "kind": "researched",
+  "units": "m",
+  "bowl": {
+    "radius_x": 48,
+    "radius_y": 70,
+    "tiers": [
+      {
+        "rows": 28,
+        "row_depth": 0.85,
+        "row_rise": 0.4,
+        "base_height": 1.5,
+        "gap_before": 0
+      },
+      {
+        "rows": 24,
+        "row_depth": 0.85,
+        "row_rise": 0.55,
+        "base_height": 15.5,
+        "gap_before": 4
+      }
+    ]
+  },
+  "stage": {
+    "layout": "end",
+    "width": 32,
+    "depth": 14,
+    "height": 1.8
+  },
+  "views": [
+    {
+      "id": "side-lower",
+      "label": "侧面低层 · 模型第12排（估算）",
+      "tier": 1,
+      "row": 12,
+      "azimuth_deg": 90
+    },
+    {
+      "id": "front-lower",
+      "label": "正面低层 · 模型第12排（估算）",
+      "tier": 1,
+      "row": 12,
+      "azimuth_deg": 0
+    },
+    {
+      "id": "front-upper",
+      "label": "正面高层 · 模型第12排（估算）",
+      "tier": 2,
+      "row": 12,
+      "azimuth_deg": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "上海市国资委：久事集团焕新改造上海体育场（2023-04-26）",
+      "url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20230426/536c3e7f6f994e42914517dd0d37f65c.html",
+      "accessed": "2026-11-14"
+    },
+    {
+      "title": "IStructE Structural Awards 2024: Shanghai Stadium renovation",
+      "url": "https://www.istructe.org/structural-awards/projects/2024/shanghai-stadium-renovation/",
+      "accessed": "2026-11-14"
+    },
+    {
+      "title": "上海绿色建筑发展报告2023，5.4.4上海体育场改造案例",
+      "url": "https://www.shanghai.gov.cn/cmsres/76/7639ff2e81b5439d8e0abc8240c32100/f8ce4c5d1285959d8a6e4f9cd07563e2.pdf",
+      "accessed": "2026-11-14"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "bowl.radius_x",
+      "status": "estimated",
+      "source_url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20230426/536c3e7f6f994e42914517dd0d37f65c.html",
+      "note": "官方材料确认内环椭圆及西高东低；未提供内场半轴。48m只是演示工作值，不是照片测量，直接影响侧面距离。"
+    },
+    {
+      "field": "bowl.radius_y",
+      "status": "estimated",
+      "source_url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20230426/536c3e7f6f994e42914517dd0d37f65c.html",
+      "note": "70m只是端台距离比较的工作值；本次未找到可核对的内场尺度图。"
+    },
+    {
+      "field": "bowl",
+      "status": "estimated",
+      "source_url": "https://www.shanghai.gov.cn/cmsres/76/7639ff2e81b5439d8e0abc8240c32100/f8ce4c5d1285959d8a6e4f9cd07563e2.pdf",
+      "note": "模型用两圈对称看台、28/24模型排、排深0.85m、排升0.40/0.55m、底高1.5/15.5m、层间距4m。官方报告支持改造与场芯下挖1.7m事实，但不支持这些绝对标高、排距和排数。"
+    },
+    {
+      "field": "stage",
+      "status": "estimated",
+      "source_url": "",
+      "note": "用户要求假想端台；32×14×1.8m为工作尺寸，位于模型-Z端，不对应真实巡演或地理北向。"
+    },
+    {
+      "field": "views",
+      "status": "estimated",
+      "source_url": "",
+      "note": "模型两层的第12排与0°/90°方位，仅用于统一镜头的三视角对比；没有票面区排座映射。"
+    }
+  ],
+  "assumptions": [
+    "本预览研究了上海体育场的公开资料，但所有影响相机的尺寸均是估算；不是坐哪儿已标定场馆模型。",
+    "真实体育场西高东低且有复杂屋盖；这里用两圈对称椭圆替代，不能复原完整外形或官方看台分区。",
+    "内场半轴48/70m、看台排距与高度均为演示工作值，不是测绘或从7.2万容量反推的尺寸。",
+    "本场演唱会是假想端台；舞台32×14×1.8m，位置为模型-Z端，不对应任何已公布巡演或真实地理方位。",
+    "同用50°垂直视场角和1.2m坐姿眼高；人物高1.75m。模型排位与票面区排座没有映射。",
+    "未建模屋盖、栏杆、音塔、悬吊物、前排观众及临时屏幕，不能判断真实遮挡、音质或票价价值。"
+  ]
+}
